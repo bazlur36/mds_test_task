@@ -1,9 +1,7 @@
 class UsersController < ApplicationController
 
   def index
-    @users = User.all
-    @successful_imports = flash[:successful_imports]
-    @unsuccessful_imports = flash[:unsuccessful_imports]
+    @records = []
   end
 
 
@@ -12,11 +10,12 @@ class UsersController < ApplicationController
       result = User.import(params[:file])
       @successful_imports = result[:successful_imports]
       @unsuccessful_imports = result[:unsuccessful_imports]
+      @records = result[:records]
       flash[:notice] = 'Import completed.'
       flash[:successful_imports] = @successful_imports
       flash[:unsuccessful_imports] = @unsuccessful_imports
     end
-    redirect_to users_path
+    render :index
   end
 
 end

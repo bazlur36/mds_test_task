@@ -9,7 +9,7 @@ class User < ApplicationRecord
     spreadsheet = Roo::Excelx.new(file.path)
     successful_imports = 0
     unsuccessful_imports = 0
-
+    records = []
     spreadsheet.sheets.each do |sheet_name|
       header = spreadsheet.sheet(sheet_name).row(1).map { |h| h.downcase }
 
@@ -17,7 +17,7 @@ class User < ApplicationRecord
         row = Hash[[header, spreadsheet.sheet(sheet_name).row(i)].transpose]
         user = find_by(email_id: row['email_id']) || new
         user.attributes = row.transform_keys(&:underscore)
-
+        record = user.attributes
         if user.valid?
           successful_imports += 1
           user.import_failure_message = nil
@@ -25,11 +25,12 @@ class User < ApplicationRecord
         else
           unsuccessful_imports += 1
           user.import_failure_message = user.errors.full_messages.join(', ')
-          user.save(validate: false)
+          record[:error_messages] = user.import_failure_message
         end
+        records.push(record)
       end
     end
 
-    return {successful_imports: successful_imports, unsuccessful_imports: unsuccessful_imports}
+    return {successful_imports: successful_imports, unsuccessful_imports: unsuccessful_imports, records: records}
   end
 end
