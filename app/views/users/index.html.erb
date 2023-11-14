@@ -1,0 +1,48 @@
+<!-- app/views/users/index.html.erb -->
+
+<h1>Users</h1>
+<% if notice %>
+  <p class="notice"><%= notice %></p>
+<% end %>
+<% if @successful_imports.present? && @unsuccessful_imports.present? %>
+  <p class="import-summary"><span class="success">Successful Imports: <%= @successful_imports %></span>,<span class="error"> Unsuccessful Imports: <%= @unsuccessful_imports %></span></p>
+<% end %>
+
+<table class="table-bordered table-spaced">
+  <thead>
+  <tr>
+    <th>SL</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email ID</th>
+    <th>Status</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @users.each_with_index do |user, index| %>
+    <tr>
+      <td><%= index + 1 %></td>
+      <td><%= user.first_name %></td>
+      <td><%= user.last_name %></td>
+      <td><%= user.email_id %></td>
+      <% if user.import_failure_message.present? %>
+        <td class="error">
+          <%= user.import_failure_message %>
+        </td>
+      <% else %>
+        <td class="success">
+          Imported
+        </td>
+      <% end %>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%= form_tag import_users_path, multipart: true do %>
+  <label for="file">Import Excel:</label>
+  <%= file_field_tag :file, { data: { no_turbolink: true } } %>
+  <%= submit_tag "Import" %>
+<% end %>
+
+
