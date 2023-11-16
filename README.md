@@ -39,5 +39,5 @@ Steps to setup and Solutions:
 Unit test codes located at __spec/models/user_spec.rb__
 
 Integration test codes located at __spec/requests/excel_upload_spec.rb__
-* Run `rspec` from bash
+* Run `bundle exec rspec` from bash
 
