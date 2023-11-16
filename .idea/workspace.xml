@@ -10,8 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c0e0a9c-dd2b-40ec-9f4f-49fa1b8b262f" name="Default Changelist" comment=" - readme finalized">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="5c0e0a9c-dd2b-40ec-9f4f-49fa1b8b262f" name="Default Changelist" comment=" - ruby version upgraded">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +30,14 @@
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../master-pickmybrain" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RubyModuleManagerSettings">
+    <option name="blackListedRootsPaths">
+      <list>
+        <option value="$PROJECT_DIR$" />
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Rails.Development: meta_design">
     <configuration name="Development: meta_design" type="RailsRunConfigurationType" factoryName="Rails">
@@ -146,6 +153,8 @@
       <workItem from="1699933689448" duration="6000" />
       <workItem from="1699952209118" duration="6423000" />
       <workItem from="1699981596329" duration="2814000" />
+      <workItem from="1700140075685" duration="187000" />
+      <workItem from="1700140264653" duration="251000" />
     </task>
     <task id="LOCAL-00001" summary="successful and failed count updated">
       <created>1699883131860</created>
@@ -252,7 +261,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699984795750</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary=" - ruby version upgraded">
+      <created>1700140304518</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1700140304518</updated>
+    </task>
+    <task id="LOCAL-00017" summary=" - ruby version upgraded">
+      <created>1700140327646</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1700140327646</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,17 +304,18 @@
     <MESSAGE value=" - readme updated with steps" />
     <MESSAGE value=" - .idea removed" />
     <MESSAGE value=" - readme finalized" />
-    <option name="LAST_COMMIT_MESSAGE" value=" - readme finalized" />
+    <MESSAGE value=" - ruby version upgraded" />
+    <option name="LAST_COMMIT_MESSAGE" value=" - ruby version upgraded" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="242" width="530" height="610" key="FileChooserDialogImpl" timestamp="1699873464580">
+    <state x="690" y="242" width="530" height="610" key="FileChooserDialogImpl" timestamp="1700140261598">
       <screen x="0" y="29" width="1920" height="1027" />
     </state>
-    <state x="690" y="242" width="530" height="610" key="FileChooserDialogImpl/0.29.1920.1027@0.29.1920.1027" timestamp="1699873464580" />
-    <state x="455" y="197" width="1000" height="700" key="Vcs.Push.Dialog.v2" timestamp="1699984797453">
+    <state x="690" y="242" width="530" height="610" key="FileChooserDialogImpl/0.29.1920.1027@0.29.1920.1027" timestamp="1700140261598" />
+    <state x="455" y="197" width="1000" height="700" key="Vcs.Push.Dialog.v2" timestamp="1700140329031">
       <screen x="0" y="29" width="1920" height="1027" />
     </state>
-    <state x="455" y="197" width="1000" height="700" key="Vcs.Push.Dialog.v2/0.29.1920.1027@0.29.1920.1027" timestamp="1699984797453" />
+    <state x="455" y="197" width="1000" height="700" key="Vcs.Push.Dialog.v2/0.29.1920.1027@0.29.1920.1027" timestamp="1700140329031" />
     <state x="100" y="127" width="1720" height="829" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1699985082613">
       <screen x="0" y="29" width="1920" height="1027" />
     </state>
@@ -304,9 +328,9 @@
       <screen x="0" y="29" width="1920" height="1027" />
     </state>
     <state x="580" y="224" width="759" height="634" key="find.popup/0.29.1920.1027@0.29.1920.1027" timestamp="1699959034973" />
-    <state x="539" y="28" width="840" height="1034" key="search.everywhere.popup" timestamp="1699982014915">
+    <state x="539" y="28" width="840" height="1034" key="search.everywhere.popup" timestamp="1700140485025">
       <screen x="0" y="29" width="1920" height="1027" />
     </state>
-    <state x="539" y="28" width="840" height="1034" key="search.everywhere.popup/0.29.1920.1027@0.29.1920.1027" timestamp="1699982014915" />
+    <state x="539" y="28" width="840" height="1034" key="search.everywhere.popup/0.29.1920.1027@0.29.1920.1027" timestamp="1700140485025" />
   </component>
 </project>
