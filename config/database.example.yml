@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password: root
+  host: localhost
+
+development:
+  <<: *default
+  database: mds_test_task
+
+test:
+  <<: *default
+  database: mds_test_task_test
